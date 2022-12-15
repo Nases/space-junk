@@ -200,12 +200,9 @@ export function Schedule() {
             </h2>
             <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
               Space junk is a growing problem that is threatening our space
-              environment. As of 2022, there are estimated to be over 170
-              million pieces of debris, ranging in size from tiny flecks of
-              paint to large pieces of rocket bodies, orbiting our planet. This
-              debris can cause significant damage to space-based infrastructure,
-              such as satellites, and can even lead to catastrophic collisions
-              with other objects in space.
+              environment. This debris can cause significant damage to
+              space-based infrastructure, such as satellites, and can even lead
+              to catastrophic collisions with other objects in space.
             </p>
             <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
               In order to address this growing danger, we must take immediate
