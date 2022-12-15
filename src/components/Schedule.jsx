@@ -6,6 +6,8 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background.jpg'
 
+import spacebot from '@/images/space/spacebot.png'
+
 const schedule = [
   {
     date: 'April 4',
@@ -239,24 +241,47 @@ export function Schedule() {
         <Container className="relative z-10">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
             <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-              Conclusion
+              Solution: Spacebot
             </h2>
+
+            <Image
+              className="m-auto mt-10 mb-10 w-[550px] object-cover transition duration-300 group-hover:scale-110"
+              src={spacebot}
+              alt=""
+              priority
+              sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+            />
+
             <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-              Space junk is a growing problem that poses significant risks to
-              our space environment. As of 2022, there are estimated to be over
-              170 million pieces of debris orbiting our planet, ranging in size
-              from tiny flecks of paint to large pieces of rocket bodies. This
-              debris can cause catastrophic collisions with other objects in
-              space and damage satellites and other infrastructure.
+              Are you worried about the ever-increasing amounts of space junk in
+              the Earth’s orbit? Do you want to help make a difference in the
+              conservation of our environment? Then Spacebot is the perfect
+              solution for you!
             </p>
             <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-              In order to address this issue, we must take immediate action by
-              improving our understanding of the debris in orbit, strengthening
-              international regulations for disposal practices, and investing in
-              research and development into technologies that actively remove
-              space debris from our orbit. We must also come together as a
-              global community to develop solutions that reduce the amount of
-              debris we generate and ensure a safer future for all.
+              Spacebot is the first space junk cleaner robot of its kind,
+              designed to help reduce the amount of space junk in Earth’s orbit.
+              It uses advanced technology to detect and collect space junk,
+              before safely disposing of it. Spacebot is capable of operating
+              autonomously, meaning it can work effectively without needing any
+              human intervention.
+            </p>
+            <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+              Spacebot is also incredibly efficient. It can cover up to five
+              times the area of a manned spacecraft in the same amount of time.
+              This makes it ideal for those who want to help reduce the amount
+              of space junk in our environment, but don’t have the time or
+              resources to do it themselves.
+            </p>
+            <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+              Spacebot is also cost-effective, making it an ideal choice for
+              those on a budget. With its low-cost operation, you can help make
+              a difference in the conservation of our environment without
+              breaking the bank.
+            </p>
+            <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+              So don’t wait – join the fight against space junk today and get
+              your own Spacebot now!
             </p>
           </div>
         </Container>
