@@ -57,106 +57,6 @@ const schedule = [
       },
     ],
   },
-  {
-    date: 'April 5',
-    dateTime: '2022-04-05',
-    summary:
-      'Next we spend the day talking about deceiving people with technology.',
-    timeSlots: [
-      {
-        name: 'Damaris Kimura',
-        description: 'The invisible card reader',
-        start: '9:00AM',
-        end: '10:00AM',
-      },
-      {
-        name: 'Ibrahim Frasch',
-        description: 'Stealing fingerprints',
-        start: '10:00AM',
-        end: '11:00AM',
-      },
-      {
-        name: 'Cathlene Burrage',
-        description: 'Voting machines',
-        start: '11:00AM',
-        end: '12:00PM',
-      },
-      {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Rinaldo Beynon',
-        description: 'Blackhat SEO that works',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Waylon Hyden',
-        description: 'Turning your audience into a botnet',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Giordano Sagucio',
-        description: 'Fly phishing',
-        start: '3:00PM',
-        end: '4:00PM',
-      },
-    ],
-  },
-  {
-    date: 'April 6',
-    dateTime: '2022-04-06',
-    summary:
-      'We close out the event previewing new techniques that are still in development.',
-    timeSlots: [
-      {
-        name: 'Andrew Greene',
-        description: 'Neuralink dark patterns',
-        start: '9:00AM',
-        end: '10:00AM',
-      },
-      {
-        name: 'Heather Terry',
-        description: 'DALL-E for passports',
-        start: '10:00AM',
-        end: '11:00AM',
-      },
-      {
-        name: 'Piers Wilkins',
-        description: 'Quantum password cracking',
-        start: '11:00AM',
-        end: '12:00PM',
-      },
-      {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Gordon Sanderson',
-        description: 'SkyNet is coming',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Kimberly Parsons',
-        description: 'Dark patterns for the metaverse',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Richard Astley',
-        description: 'Knowing the game and playing it',
-        start: '3:00PM',
-        end: '4:00PM',
-      },
-    ],
-  },
 ]
 
 function ScheduleTabbed() {
@@ -291,38 +191,79 @@ function ScheduleStatic() {
 
 export function Schedule() {
   return (
-    <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
-      <Container className="relative z-10">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, evil
-            geniuses.
-          </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            The worst people in our industry giving the best talks you’ve ever
-            seen. Nothing will be recorded and every attendee has to sign an NDA
-            to watch the talks.
-          </p>
-        </div>
-      </Container>
-      <div className="relative mt-14 sm:mt-24">
-        <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-indigo-50">
-          <Image
-            className="absolute left-full top-0 -translate-x-1/2 sm:left-1/2 sm:translate-y-[-15%] sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] lg:translate-y-[4%] xl:translate-y-[-8%] xl:translate-x-[27%]"
-            src={backgroundImage}
-            alt=""
-            width={918}
-            height={1495}
-            unoptimized
-          />
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
-        </div>
-        <Container className="relative">
-          <ScheduleTabbed />
-          <ScheduleStatic />
+    <>
+      <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
+        <Container className="relative z-10">
+          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
+            <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
+              What Can We Do About Space Junk?
+            </h2>
+            <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+              Space junk is a growing problem that is threatening our space
+              environment. As of 2022, there are estimated to be over 170
+              million pieces of debris, ranging in size from tiny flecks of
+              paint to large pieces of rocket bodies, orbiting our planet. This
+              debris can cause significant damage to space-based infrastructure,
+              such as satellites, and can even lead to catastrophic collisions
+              with other objects in space.
+            </p>
+            <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+              In order to address this growing danger, we must take immediate
+              action. We must start by improving our understanding of the debris
+              in our orbit and the threats it poses. This includes improving
+              tracking technologies to monitor and track debris, as well as
+              developing better models to predict the trajectories of space
+              debris. Additionally, we must also strengthen international
+              regulations to reduce the volume of debris we generate and how it
+              is disposed of in space.
+            </p>
+            <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+              In addition to these actions, we must also invest in research and
+              development of technologies that can actively remove space debris
+              from our orbit. These technologies include the use of robotic arms
+              and nets to capture debris, as well as the use of lasers and other
+              directed energy systems to push debris out of orbit. We must also
+              explore the potential of using gravity to naturally pull debris
+              out of orbit.
+            </p>
+            <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+              Ultimately, the solution to our space junk problem must be a
+              collaborative effort between governments, private industry, and
+              the scientific community. We must come together to develop
+              solutions to reduce the amount of debris we generate and actively
+              remove debris from our orbit. With the right commitment, we can
+              protect our space environment and ensure a safer future for all.
+            </p>
+          </div>
         </Container>
-      </div>
-    </section>
+      </section>
+
+      <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
+        <Container className="relative z-10">
+          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
+            <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
+              Conclusion
+            </h2>
+            <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+              Space junk is a growing problem that poses significant risks to
+              our space environment. As of 2022, there are estimated to be over
+              170 million pieces of debris orbiting our planet, ranging in size
+              from tiny flecks of paint to large pieces of rocket bodies. This
+              debris can cause catastrophic collisions with other objects in
+              space and damage satellites and other infrastructure.
+            </p>
+            <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+              In order to address this issue, we must take immediate action by
+              improving our understanding of the debris in orbit, strengthening
+              international regulations for disposal practices, and investing in
+              research and development into technologies that actively remove
+              space debris from our orbit. We must also come together as a
+              global community to develop solutions that reduce the amount of
+              debris we generate and ensure a safer future for all.
+            </p>
+          </div>
+        </Container>
+      </section>
+    </>
   )
 }

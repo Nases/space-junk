@@ -1,7 +1,6 @@
 import Head from 'next/head'
 
 import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Newsletter } from '@/components/Newsletter'
 import { Schedule } from '@/components/Schedule'
@@ -14,13 +13,10 @@ export default function Home() {
       <Head>
         <title>Why we need to clean up space junk</title>
       </Head>
-      <Header />
       <main>
         <Hero />
         <Speakers />
         <Schedule />
-        <Sponsors />
-        <Newsletter />
       </main>
       <Footer />
     </>

@@ -5,29 +5,17 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
-import andrewGreeneImage from '@/images/avatars/andrew-greene.jpg'
-import cathleneBurrageImage from '@/images/avatars/cathlene-burrage.jpg'
-import damarisKimuraImage from '@/images/avatars/damaris-kimura.jpg'
-import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
-import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-import giordanoSagucioImage from '@/images/avatars/giordano-sagucio.jpg'
-import gordonSandersonImage from '@/images/avatars/gordon-sanderson.jpg'
-import heatherTerryImage from '@/images/avatars/heather-terry.jpg'
-import ibrahimFraschImage from '@/images/avatars/ibrahim-frasch.jpg'
-import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import kimberlyParsonsImage from '@/images/avatars/kimberly-parsons.jpg'
-import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-import piersWilkinsImage from '@/images/avatars/piers-wilkins.jpg'
-import richardAstley from '@/images/avatars/richard-astley.jpg'
-import rinaldoBeynonImage from '@/images/avatars/rinaldo-beynon.jpg'
-import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
-import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
-import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
+import dianneGuilianelliImage from '@/images/space/6.jpg'
+import erhartCockrinImage from '@/images/space/2.jpg'
+import jaquelinIschImage from '@/images/space/3.jpg'
+import parkerJohnsonImage from '@/images/space/4.jpg'
+import ronniCantadoreImage from '@/images/space/1.webp'
+import stevenMchailImage from '@/images/space/7.webp'
 
 const days = [
   {
-    name: 'Opening Day',
-    date: 'April 4',
+    name: 'Space Junk',
+    date: 'Orbit',
     dateTime: '2022-04-04',
     speakers: [
       {
@@ -59,80 +47,6 @@ const days = [
         name: 'Parker Johnson',
         role: 'UI Designer at MomCorp',
         image: parkerJohnsonImage,
-      },
-    ],
-  },
-  {
-    name: 'Speakers & Workshops',
-    date: 'April 5',
-    dateTime: '2022-04-05',
-    speakers: [
-      {
-        name: 'Damaris Kimura',
-        role: 'Senior Engineer at OCP',
-        image: damarisKimuraImage,
-      },
-      {
-        name: 'Ibrahim Frasch',
-        role: 'Programmer at Umbrella Corp',
-        image: ibrahimFraschImage,
-      },
-      {
-        name: 'Cathlene Burrage',
-        role: 'Frontend Developer at Buy n Large',
-        image: cathleneBurrageImage,
-      },
-      {
-        name: 'Rinaldo Beynon',
-        role: 'Data Scientist at Rekall',
-        image: rinaldoBeynonImage,
-      },
-      {
-        name: 'Waylon Hyden',
-        role: 'DevOps at RDA Corporation',
-        image: waylonHydenImage,
-      },
-      {
-        name: 'Giordano Sagucio',
-        role: 'Game Developer at Soylent Corp',
-        image: giordanoSagucioImage,
-      },
-    ],
-  },
-  {
-    name: 'Interviews',
-    date: 'April 6',
-    dateTime: '2022-04-06',
-    speakers: [
-      {
-        name: 'Andrew Greene',
-        role: 'Frontend Developer at Ultratech',
-        image: andrewGreeneImage,
-      },
-      {
-        name: 'Heather Terry',
-        role: 'Backend Developer at Xanatos Enterprises',
-        image: heatherTerryImage,
-      },
-      {
-        name: 'Piers Wilkins',
-        role: 'Full stack Developer at BiffCo',
-        image: piersWilkinsImage,
-      },
-      {
-        name: 'Gordon Sanderson',
-        role: 'Mobile Developer at Cobra Industries',
-        image: gordonSandersonImage,
-      },
-      {
-        name: 'Kimberly Parsons',
-        role: 'Game Developer at Tyrell Corporation',
-        image: kimberlyParsonsImage,
-      },
-      {
-        name: 'Richard Astley',
-        role: 'CEO at Roll Out',
-        image: richardAstley,
       },
     ],
   },
@@ -188,11 +102,16 @@ export function Speakers() {
             id="speakers-title"
             className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
           >
-            Speakers
+            Extent
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            Learn from the experts on the cutting-edge of deception at the most
-            sinister companies.
+            The exact number of pieces of space debris orbiting the Earth is
+            unknown, however, according to the European Space Agency, there are
+            more than 170 million pieces of space debris larger than 1 cm and an
+            estimated 500,000 pieces larger than 1 cm in low Earth orbit (LEO).
+            Of these, the ESA estimates that 34,000 are operational satellites.
+            Additionally, there are millions of smaller pieces of debris that
+            are too small to track.
           </p>
         </div>
         <Tab.Group
@@ -273,12 +192,6 @@ export function Speakers() {
                         />
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
-                      {speaker.name}
-                    </h3>
-                    <p className="mt-1 text-base tracking-tight text-slate-500">
-                      {speaker.role}
-                    </p>
                   </div>
                 ))}
               </Tab.Panel>
